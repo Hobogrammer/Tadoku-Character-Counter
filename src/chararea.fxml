@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="493.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <TextArea fx:id="count_txt" promptText="Paste/Type text here" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+    <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <VBox alignment="CENTER">
+           <Label fx:id="count_label" alignment="CENTER" contentDisplay="TOP" prefHeight="23.0" prefWidth="493.0" text="#" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" />
+        </VBox>
+    </HBox>
+  </children>
+</AnchorPane>
