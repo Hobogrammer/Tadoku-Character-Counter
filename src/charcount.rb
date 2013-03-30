@@ -4,7 +4,7 @@ class CharCountApp < JRubyFX::Application
   def start(stage)
     stage.title = "Character Counter"
 
-    CharCountController.new("chararea.fxml", stage, fill: :grey)
+    CharCountController.new("chararea.fxml", stage)
     stage.show
   end
 end
@@ -16,7 +16,7 @@ class CharCountController
    @chars =  count_txt
    @char_count = count_label
 
-    @chars.text_property.add_change_listener do |obs, oval, nval|
+    @chars.text_property.add_change_listener do
        @char_count.text = @chars.text.length.to_s
     end
   end
