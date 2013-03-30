@@ -16,7 +16,7 @@ class CharCountController
    @chars =  count_txt
    @char_count = count_label
 
-    @chars.text_property.add_change_listener do
+    @chars.text_property.addListener do
        @char_count.text = @chars.text.length.to_s
     end
   end
